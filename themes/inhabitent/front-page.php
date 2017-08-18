@@ -15,32 +15,6 @@ get_header(); ?>
 
 
 
-
-<!-- <section class="category-info container">
-    <h2>shop stuff</h2>
-<?php
-    $args = array(
-    'post_type' => 'product-type'
-    );
-
-    $product_types = get_terms( $args ); // returns an array of posts
-?>
-    <div class="flex-container-no-wrap">
-    <?php foreach ($product_types as $product_type) :
-        setup_postdata( $product_type );
-    ?>
-      <div class="category-info-items">
-        <div class="single-category-item>
-          <img src=<?php echo get_stylesheet_directory_uri() . '/images/' . strtolower($product_type->name) .'.svg' ; ?> alt="<?php echo $product_type->name . ' category icon' ?>">
-            <p><?php echo $product_type->description ?></p>
-              <a class="text-uppercase" href="<?php echo home_url() ?>/product-type/<?php echo $product_type->slug ?>"><?php echo $product_type->name . ' Stuff' ?></a>
-            </div>
-          </div>
-        <?php endforeach; wp_reset_postdata(); ?>
-          </div>
-</section> -->
-
-
 <!-- JOURNAL POSTS -->
 <section class="latest-journal-post container">
   <h2>inhabitent journal</h2>
