@@ -15,3 +15,42 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+/* Sidebar widget. */
+.widget-area {
+	align-items:			center;
+
+	h2 {
+		text-transform: uppercase;
+		color: $color__purple-brand;
+	}
+
+	a {
+		color: $color__green-brand;
+		text-decoration:	none;
+		&:hover{
+		color: $color__purple-brand;
+		}
+	}
+}
+
+.widget-title {
+	i {
+		min-width: 1.5rem;
+	}
+	.widget-meta {
+		display: flex;
+	}
+}
+
+.fa {
+	margin-right: 0.5rem;
+	line-height: 1.8rem;
+}
+
+.widget_archive {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+}

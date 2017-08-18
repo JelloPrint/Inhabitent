@@ -28,8 +28,8 @@ a {
 
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
+	display: flex;
+	flex-flow: row nowrap;
 	width: 100%;
 
 	ul {
@@ -85,8 +85,14 @@ a {
 		}
 	}
 	a {
+		color: $color__green-brand;
 		display: block;
+		font-family: $font__menu;
 		text-decoration: none;
+		text-transform: uppercase;
+		&:hover{
+			color: $color__purple-brand;
+		}
 	}
 
 	.current_page_item > a,

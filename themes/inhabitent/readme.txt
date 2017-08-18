@@ -1,4 +1,4 @@
-=== RED Starter Theme ===
+=== Inhabitent Starter Theme ===
 
 Contributors: automatic
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
@@ -13,7 +13,7 @@ A starter theme called RED Starter Theme, or underscores.
 
 == Description ==
 
-Hi. I'm a starter theme called RED Starter Theme, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hi. I'm a starter theme called Inhabitent Starter Theme, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 == Installation ==
 	

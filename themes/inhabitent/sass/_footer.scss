@@ -1,0 +1,67 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.site-footer {
+  background:           url(../../images/dark-wood@2x.png);
+  background-size:      512px 512px; 
+  color:                $color__white-text;
+}
+
+  .footer-blocks {
+    display:            flex;
+    line-height:        1.5r;
+    padding-top:        19px;
+    padding-bottom:     12px;
+    
+  .footer-block-item {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-right: 1.5rem;
+    width: 25%;
+
+    h3 {
+    color:              $color__orange-brand;
+    font-size:          1.2rem;
+    line-height:        1.25;
+    margin-bottom:      .75rem;
+    }
+
+    p {
+    font-family:        Merriweather Web, serif;
+    margin-bottom:      .5rem;
+    }
+    a {
+      color:$color__white-text;
+			text-decoration: none;
+    }
+  }
+}
+
+.day-of-week {
+  font-weight:          700;
+}
+
+.footer-block-item:last-child {
+  padding-right:        0;
+  width:                50%;
+}
+
+.footer-logo {
+  margin-top:           1rem;
+  text-align:           right;
+
+  img {
+    height:             auto;
+    max-width:          50%;
+  }
+}
+
+.footer-copyright {
+    padding-top:        24px;
+    padding-bottom:     24px;
+    text-align:         center;
+    text-transform:     uppercase;
+    line-height:        1.75;
+
+}

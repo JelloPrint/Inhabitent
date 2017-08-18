@@ -1,5 +1,50 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* ---------- Front Page ----------*/
 
-/* Front page */
+.home-hero {
+  align-items:            center;
+  background:             linear-gradient(180deg, rgba(0,0,0,0.4)0, rgba(0,0,0,0.4)), #969696 url(../../images/home-hero-compressed.jpg) no-repeat top;
+  background-size:        cover, cover;
+  display:                flex;
+  height:                 100vh;
+  justify-content: center;
+  }
+
+  .category-info, .latest-journal-post{
+    h2{
+      color:              $color__purple-brand;
+      line-height:        1.25;
+      font-size:          2.4rem;
+      font-weight:        400;
+      margin-bottom:       3.75rem;
+      text-align: center;
+    }
+  }
+/* ---------- About Page ----------*/
+
+.page-template-about {
+
+  .custom-hero {
+    align-items:            center;
+    background-size:        cover;
+    background-position:    center;
+    height:                 100vh;
+  }
+  .entry-title{
+    color:                  $color__white-text;
+    font-size:              3rem;
+    text-align:             center;
+  }
+  .entry-content{
+    margin:                 3rem auto;
+    max-width:              800px;
+  }
+  h2{
+    color:                  $color__purple-brand;
+    font-size:              2.1rem;
+    text-align:             center;
+  }
+}
+
