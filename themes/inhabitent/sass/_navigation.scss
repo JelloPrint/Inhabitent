@@ -85,14 +85,9 @@ a {
 		}
 	}
 	a {
-		color: $color__green-brand;
 		display: block;
-		font-family: $font__menu;
 		text-decoration: none;
-		text-transform: uppercase;
-		&:hover{
-			color: $color__purple-brand;
-		}
+		color: $color__background-body;
 	}
 
 	.current_page_item > a,
@@ -135,4 +130,42 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+
+/*     white/green main header */
+
+.main-navigation {
+	clear: both;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	a {
+		color: $color__green-brand;
+		text-transform: uppercase;
+		&:hover {
+			color: $color__purple-brand;
+		}
+	}
+}
+
+.site-header {
+	background-color: hsla(0,0%,100%,.85);
+	border-bottom: 1px solid #e1e1e1;
+	padding: .5rem 0;
+	position: fixed;
+	transition: top .5s linear;
+	width: 100%;
+	z-index: 3;
+}
+
+.site-header h1 {
+	background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+	background-size: 50px 33px;
+	height: 33px;
+	margin: 0;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 50px;
 }

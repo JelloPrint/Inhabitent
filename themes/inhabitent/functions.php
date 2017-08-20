@@ -83,18 +83,18 @@ add_filter( 'stylesheet_uri', 'inhabitent_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function inhabitent_scripts() {
+	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );	
 	wp_enqueue_style( 'inhabitent-style', get_stylesheet_uri() );
-  wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
 
 	wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/bfb63bc5e8.js', array(), '4.7.0', false);
-
+	
 	wp_enqueue_script( 'inhabitent-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
-	if ( is_page( 'about' ) || is_front_page() || is_singular( 'adventure' ) ) {
-		wp_enqueue_script( 'inhabitent-main', get_template_directory_uri() . '/build/js/site-header.min.js', array(), '20130115', true );
-	}
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
+	}
+	if ( is_page( 'about' ) || is_front_page() || is_singular( 'adventure' ) ) {
+		wp_enqueue_script( 'inhabitent-main', get_template_directory_uri() . '/build/js/site-header.min.js', array(), '20130115', true );
 	}
 }
 
