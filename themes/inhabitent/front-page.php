@@ -16,33 +16,12 @@ get_header(); ?>
     </section>
 
     <!-- SHOP STUFF  -->
-    <section class="product-shop container">
-      <h2>Shop Stuff</h2>
-        <?php 
-        $args = array( 
-          'post_type' => 'product-type' 
-        );
-        $terms = get_terms( $args );
-      ?>
-
-      <?php foreach ($terms as $term): ; ?>
-
-      <div class="product-category">
-        <img src="<?php echo get_site_url(); ?>/wp-content/themes/inhabitent/assets/images/product-type-icons/<?echo $term->slug?>.svg"/>
-        <p><? echo $term->description; ?></p>
-          <div class="green-btn">
-            <a href="#"> <?php echo $term->name; ?> Stuff</a>
-          </div> <!--#green-btn -->
-      </div> <!--#product-category -->
-
-      <?php endforeach; wp_reset_postdata(); ?>
-    </section> <!-- Product-Shop Container -->
 
 
-
-    <!-- JOURNAL POSTS -->
+    <!-- Latest JOURNAL POSTS -->
     <section class="latest-journal-entries container">
       <h2>inhabitent journal</h2>
+      
         <?php
             $args = array(
               'post_type'   => 'post',
@@ -76,6 +55,45 @@ get_header(); ?>
 
         <?php endforeach; wp_reset_postdata(); ?>
     </section> <!--#latest-journal-entries container"-->
+
+    <!--Adventures POSTS--> 
+    <section class="adventures-container">
+            <h2>Latest Adventures</h2>
+                <div class="all-boxes">
+                    <div class="left--side-boxes">
+                        <ul class="adventure-boxes">
+                            <li class="adventure-box1">
+                                <h3 class="adventure-text"> Getting Back to Nature in a Canoe
+                                </h3>
+                                <a class="white-btn">Read More</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-side-boxes">
+                        <ul class="adventure-boxes">
+                            <li class="adventure-box2">
+                                <h3 class="adventure-text"> A Night with Friends at the Beach
+                                </h3>
+                                <a class="white-btn">Read More</a>
+                            </li>
+                            <li class="adventure-box3">
+                                <h3 class="adventure-text"> Taking in the View at Big Mountain
+                                </h3>
+                                <a class="white-button">Read More</a>
+                            </li>
+                            <li class="adventure-box4">
+                                <h3 class="adventure-text"> Star-Gazing at the Night Sky
+                                </h3>
+                                <a class="white-btn">Read More</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p>
+                    <a>More Adventures</a>
+                </p>
+    </section> 
+
   </main> <!--#main -->
 </div> <!--#primary -->
 

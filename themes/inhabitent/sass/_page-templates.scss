@@ -1,6 +1,12 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* ---------- Global ----------*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+}
 /* ---------- Front Page ----------*/
 .home{
   .home-hero{
@@ -21,30 +27,17 @@
     }
 }
 
+/* ---------- Latest Journal Posts ----------*/
+
 /* ---------- About Page ----------*/
 
-.page-template-about {
+/* ---------- header ----------*/
 
-  .custom-hero{
-    height:               100vh;
-    background-size:      cover;
-    background-position:  center;
-    align-items:          center;
-  }
-  
-  .entry-title{
-    color:                 $color__white-text;
-    font-size:             3rem;
-    text-align:            center;
-  }
-  .entry-content{
-    margin:                3rem auto;
-    max-width:             800px;
-  }
-  h2{
-    color:                 $color__purple-brand;
-    font-size:             2.1rem;
-    text-align:            center;
-  }
+.front-page .about {
+  .site-header.reverse-header {
+    background-color: transparent;
+    border-bottom: 0;
+    position: absolute;
+    text-shadow: 1px 1px 2px #323232;
 }
-
+}

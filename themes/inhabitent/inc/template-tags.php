@@ -179,10 +179,10 @@
  		echo '<nav role="navigation" class="search-pagination">';
  		echo paginate_links(
  			array(
- 				'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
- 				'format' => '?paged=%#%',
- 				'current' => max( 1, get_query_var('paged') ),
- 				'total' => $wp_query->max_num_pages,
+ 				'base' 			=> str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+ 				'format' 		=> '?paged=%#%',
+ 				'current' 	=> max( 1, get_query_var('paged') ),
+ 				'total' 		=> $wp_query->max_num_pages,
  				'prev_text' => esc_html( '&larr; Previous' ),
  				'next_text' => esc_html( 'Next &rarr;' ),
  			)
