@@ -8,6 +8,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
 			<?php query_posts( array( 
 				'post_type' =>'product', 
 				'orderby' 	=> 'date', 
@@ -30,13 +31,12 @@ get_header(); ?>
 					?>
 
 					<div class="flex-container-no-wrap">
-						<ul class="product-types">
-					<?php foreach ( $product_types as $product_type ) : setup_postdata( $product_type ); ?>
-						<li class="product-type-name">
-							<a class="text-uppercase" href="<?php echo home_url() ?>/product-type/<?php echo $product_type->slug ?>"><?php echo $product_type->name ?></a>
-						</li> <!--#product-types"-->
-					<?php endforeach; wp_reset_postdata(); ?>
-						</ul> <!--#product-types" -->
+						<?php foreach ( $product_types as $product_type ) : setup_postdata( $product_type ); ?>
+							<div class="product-type-name">
+								<a class="text-uppercase" href="<?php echo home_url() ?>/product-type/<?php echo $product_type->slug ?>"><?php echo $product_type->name ?></a>
+							</div> <!--#product-type-name"-->
+
+						<?php endforeach; wp_reset_postdata(); ?>
 					</div> <!-- #flex-container-no-wrap -->
 				</header> <!-- page-header -->
 

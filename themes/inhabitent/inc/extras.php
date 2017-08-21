@@ -32,9 +32,11 @@ function inhabitent_login_logo() { ?>
 		background-repeat: no-repeat;
         }
     </style>
-    <?php }
+<?php }
 
 add_action('login_head', 'inhabitent_logo_login');
+
+// Change the logo's url
 function inhabitent_logo_login_url() {
 	return home_url();
 }
@@ -46,9 +48,10 @@ function inhabitent_login_title(){
 }
 add_filter( 'login_headertitle', 'inhabitent_login_title' );
 
-/**
- * Make hero image customizable through CFS field or featured image.
- */
+//Remove theme and plugin editors in this folder
+
+// Make hero image customizable through CFS field or featured image.
+ 
 function inhabitent_dynamic_css() {
     if ( ! is_page_template( 'page-templates/about.php' ) ) {
         return;
@@ -77,7 +80,7 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 
-/* Changing the titles of shop and product pages */
+/* Changes the titles of shop and product pages */
 function archive_product_title ( $title ) {
     if ( is_post_type_archive('product' ) ) {
         $title = 'Shop Stuff';

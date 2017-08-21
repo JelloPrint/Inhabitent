@@ -17,8 +17,8 @@
 
 		<div class="entry-meta">
 			<?php inhabitent_posted_on(); ?> / <?php inhabitent_comment_count(); ?> / <?php inhabitent_posted_by(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+		</div> <!-- #entry-meta -->
+	</header> <!-- #entry-header -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -28,9 +28,14 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div> <!-- #entry-content -->
 
 	<footer class="entry-footer">
 		<?php inhabitent_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+	</footer> <!-- #entry-footer -->
+	<div class="social-media-section">
+		<button class="social-btn"><i class="fa fa-facebook" aria-hidden="true"></i> like</button>
+		<button class="social-btn"><i class="fa fa-twitter" aria-hidden="true"></i> tweet</button>
+		<button class="social-btn"><i class="fa fa-pinterest" aria-hidden="true"></i> pin</button>
+	</div> <!--#social-media-section -->
+</article><!-- #post -->
