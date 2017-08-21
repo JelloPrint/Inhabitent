@@ -21,20 +21,18 @@ function inhabitent_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'inhabitent_body_classes' );
 
-
-
-function inhabitent_logo_login() { ?>
-<style type="text/css">
-	#login h1 a, .login h1 a  {
-		background-image: url (<?php echo get_stylesheet_directory_url(); ?>/images/inhabitent-logo-text.svg);
-		height:65px;
+//This function changes the WP logo on the login page to the inhabitent logo
+function inhabitent_login_logo() { ?> 
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+        background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/inhabitent-site/images/logos/inhabitent-logo-text-dark.svg);
+		height:100px;
 		width:320px;
-		background-size: 320px 65px;
+		background-size: 320px 100px;
 		background-repeat: no-repeat;
-			padding-bottom: 30px:
-}
-
-<?php }
+        }
+    </style>
+    <?php }
 
 add_action('login_head', 'inhabitent_logo_login');
 function inhabitent_logo_login_url() {
@@ -71,19 +69,35 @@ function inhabitent_dynamic_css() {
 add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
 
 
+/* Replaces the excerpt "Read More" text by a link */
+function new_excerpt_more($more) { 
+    global $post;
+ return '<div class="read-more-button"><a class="moretag" href="'. get_permalink($post->ID) . '">Read More →</a></div>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
-/* change the names */
 
+/* Changing the titles of shop and product pages */
 function archive_product_title ( $title ) {
     if ( is_post_type_archive('product' ) ) {
         $title = 'Shop Stuff';
     } 
-    
     elseif ( is_tax( 'product-type' ) ) {
         $title = single_term_title( '', false);
     }
-
     return $title;
 }
 
 add_filter( 'get_the_archive_title', 'archive_product_title');
+
+
+/* Increase the number of posts to be shown to 16  */
+function inhabitent_limit_archive_posts($query){
+	if ($query->is_archive) {
+        $query->set( 'posts_per_page' , 16);
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+	}
+    return $query;
+}
+add_filter('pre_get_posts', 'inhabitent_limit_archive_posts');
