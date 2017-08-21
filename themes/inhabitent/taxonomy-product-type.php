@@ -1,42 +1,50 @@
+<?php
 /**
- * The template for displaying a taxonomy-product page.
- *
+ * The template for displaying the archive pages.
+ * 
  * @package inhabitent_Theme
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+      <div class="container">
+				<?php if ( have_posts() ) : ?>
+					<header class="page-header">
+						<?php
+							the_archive_title( '<h1 class="page-title">', '</h1>' );
+							the_archive_description( '<div class="taxonomy-description">', '</div>' );
+						?>
+						
+			  	</header> <!-- page-header -->
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+					<section class="flex-container">
+						<?php while ( have_posts() ) : the_post(); ?>
+							<div class="product-grid-item">
+            		<div class="product-item-thumbnail">
+              		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
+            		</div> <!--#product-item-thumbnail -->
+            		<p class="product-item-text">
+              		<?php the_title(); ?>
+              			<span>......</span>
+              		<?php echo CFS()->get( 'price' ); ?>
+            		</p> <!--#product-item-text -->
+          		</div> <!--#product-grid-item -->
+      
+							<?php endwhile; ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+							<?php the_posts_navigation(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+							<?php else : ?>
 
-			<?php endwhile; ?>
+							<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-			<?php the_posts_navigation(); ?>
+							<?php endif; ?>
+						</section> <!--#flex-container -->
+      </div> <!--#container -->
+    </main> <!--#main -->
+  </div> <!--#primary -->
 
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
