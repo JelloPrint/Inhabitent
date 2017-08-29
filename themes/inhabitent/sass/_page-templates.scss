@@ -7,8 +7,64 @@
   margin-right: auto;
   width: 1120px;
 }
+body, button, input, select, textarea {
+  color: #404040;
+  font-family: Merriweather Web,serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.black-btn, .green-btn, .white-btn {	
+    border-radius: 0;
+    cursor: pointer;
+    font-family: Novecento Sans Web,sans-serif;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+ 
+	&:hover {
+		color: $color__white-text;
+		box-shadow: none;
+		text-shadow: none;
+	}
+}
+.black-btn {
+  background-color: transparent;
+  border: 1px solid $color__black-text;
+  color: $color__black-text;
+
+  &:hover {
+    background: $color__green-brand;
+  }
+} 
+.green-btn {
+  background-color: $color__green-brand;
+  border: 1px solid $color__white-text;
+  color: $color__white-text;
+
+  &:hover {
+    background: darken($color__green-brand, 10%);
+  }
+}
+.white-btn {
+  background-color: transparent;
+  border: 1px solid $color__green-brand;
+  color: $color__green-brand;
+
+  &:hover {
+    background: $color__green-brand;
+  }
+}
+
+.entry-content {
+  text-align: center;
+}
+
 /* ---------- Front Page ----------*/
-.home{
+.home {
   .home-hero{
     background:           linear-gradient(rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
     background-size:      cover,cover;
@@ -16,6 +72,7 @@
     display:              flex;
     align-items:          center;
     justify-content:      center;
+    width:                100%;
   }
   h2{
     color:                $color__purple-brand;
@@ -30,14 +87,47 @@
 /* ---------- Latest Journal Posts ----------*/
 
 /* ---------- About Page ----------*/
+.page-template-about h2 {
+    line-height: 1.25;
+    color: $color__purple-brand;
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;  
+}
+.page-template-about .entry-title {
+  color: $color__white-text;
+  font-size: 3rem;
+  text-align: center;
+}
+.custom-hero {
+  background-size:      cover,cover;
+  height:               100vh;
+  display:              flex;
+  align-items:          center;
+  justify-content:      center;
+  width:                100%;
+}
+.page-template-about .entry-content {
+  margin: 3rem auto;
+  max-width: 800px;
+  padding-bottom: 10px;
+}
 
 /* ---------- header ----------*/
 
-.front-page .about {
-  .site-header.reverse-header {
-    background-color: transparent;
-    border-bottom: 0;
-    position: absolute;
-    text-shadow: 1px 1px 2px #323232;
+.main-navigation {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+  font-family: Novecento Sans Web,sans-serif;
+  text-transform: uppercase;
 }
+
+/* ---------- Contact Form ----------*/
+
+.wpcf7 {
+  color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
 }

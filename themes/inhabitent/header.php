@@ -23,19 +23,19 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="container">
 					<div class="site-branding">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<!-- <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 								<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 								<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-						</a> 
+						</a>  -->
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
-						<div class="header-search">
-							<?php get_search_form(); ?>
-						</div> <!-- header-search -->
+						<!-- <div class="header-search">
+							<?php //get_search_form(); ?>
+						</div> header-search -->
 					</nav> <!-- #site-navigation -->
 				</div> <!-- #container -->
 			</header> <!-- #masthead -->

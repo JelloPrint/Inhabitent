@@ -8,7 +8,7 @@
  */
 get_header(); ?>
 
-<div id="primary" class="content-area">
+        <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
     <section class="home-hero">
@@ -47,10 +47,7 @@ get_header(); ?>
           </div> <!--#entry-meta -->
           <h3><a class="Journal-entry-title" href="<? echo get_post_permalink() ?>"><?php the_title(); ?></a><h3>
         </div> <!-- entry-wrapper -->
-        
-        <div class="black-btn">
-          <a href="<?echo get_post_permalink()?>">Read Entry</a>
-        </div> <!--#black-btn-->
+        <a class="black-btn" href="<?echo get_post_permalink()?>">Read Entry</a>
       </div> <!--#latest-journal-entry -->
 
         <?php endforeach; wp_reset_postdata(); ?>
@@ -60,7 +57,7 @@ get_header(); ?>
     <section class="adventures-container">
             <h2>Latest Adventures</h2>
                 <div class="all-boxes">
-                    <div class="left--side-boxes">
+                    <div class="left-side-boxes">
                         <ul class="adventure-boxes">
                             <li class="adventure-box1">
                                 <h3 class="adventure-text"> Getting Back to Nature in a Canoe
@@ -79,7 +76,7 @@ get_header(); ?>
                             <li class="adventure-box3">
                                 <h3 class="adventure-text"> Taking in the View at Big Mountain
                                 </h3>
-                                <a class="white-button">Read More</a>
+                                <a class="white-btn">Read More</a>
                             </li>
                             <li class="adventure-box4">
                                 <h3 class="adventure-text"> Star-Gazing at the Night Sky

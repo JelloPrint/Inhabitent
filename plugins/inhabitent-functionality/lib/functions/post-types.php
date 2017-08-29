@@ -59,7 +59,7 @@ function inhabitent_cpt_product() {
       'capability_type'       => 'post',
       'show_in_rest'          => true,
     );
-    register_post_type( '_product', $args );
+    register_post_type( 'product', $args );
 
     //clear permalinks
     flush_rewrite_rules();

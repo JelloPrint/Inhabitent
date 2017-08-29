@@ -29,7 +29,7 @@ get_header(); ?>
           </header><!-- .entry-header -->
 
         <div class="entry-content">
-          <h2 class="price">$<?php echo CFS()->get( 'price' ); ?></h2>
+          <h2 class="price"><?php echo CFS()->get( 'price' ); ?></h2>
           <?php the_content(); ?>
             <div class="social-media-buttons">
               <button type="button" class="sm-button"><i class="fa fa-facebook"></i> Like</button>
