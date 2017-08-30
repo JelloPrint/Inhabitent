@@ -60,9 +60,6 @@ body, button, input, select, textarea {
     background:           $color__green-brand;
   }
 }
-.entry-content {
-  text-align:             center;
-}
 .page-title {
   font-size:              2.4rem;
   line-height:            1.25;
@@ -214,9 +211,20 @@ body, button, input, select, textarea {
 .single-product .social-media-buttons {
   margin:                 1.5rem 0;
 }
-/* ---------- Latest Journal Posts ----------*/
+/* ---------- Journal ----------*/
+.page .entry-title {
+  color:                  $color__purple-brand;
+  margin-top:             0;
+  line-height:            1.25rem;
+  font-family:            $font__menu;
+  font-size:              2.4rem;
+  font-weight:            bold;
+  margin-bottom:          .5rem;
+  text-transform:         uppercase;
+}
 
 /* ---------- About Page ----------*/
+
 .page-template-about h2 {
     line-height:          1.25;
     color:                $color__purple-brand;
@@ -266,9 +274,3 @@ body, button, input, select, textarea {
 
 /* ---------- Contact Form ----------*/
 
-.wpcf7 {
-  color: #666;
-  background-color: #f4f4f4;
-  border: 1px solid #e1e1e1;
-  border-radius: 0;
-}

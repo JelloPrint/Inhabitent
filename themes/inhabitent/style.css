@@ -394,17 +394,17 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  background: #248A83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: .9rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -429,8 +429,10 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
+  background-color: #f4f4f4;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 0;
+  padding: .3rem; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -449,6 +451,15 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+form p label {
+  color: #2f1339;
+  display: block;
+  font-family: "Novecento Sans Web", sans-serf;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -627,7 +638,14 @@ a {
 
 .widget_archive ul {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
+
+.widget-area {
+  padding-top: 3rem;
+  padding-left: 5%;
+  padding-bottom: 3rem;
+  width: 27%; }
 
 /*--------------------------------------------------------------
 # Content
@@ -777,9 +795,6 @@ body, button, input, select, textarea {
   color: #248A83; }
   .white-btn:hover {
     background: #248A83; }
-
-.entry-content {
-  text-align: center; }
 
 .page-title {
   font-size: 2.4rem;
@@ -933,7 +948,17 @@ body, button, input, select, textarea {
 .single-product .social-media-buttons {
   margin: 1.5rem 0; }
 
-/* ---------- Latest Journal Posts ----------*/
+/* ---------- Journal ----------*/
+.page .entry-title {
+  color: #2f1339;
+  margin-top: 0;
+  line-height: 1.25rem;
+  font-family: "Novecento Sans Web", sans-serf;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  text-transform: uppercase; }
+
 /* ---------- About Page ----------*/
 .page-template-about h2 {
   line-height: 1.25;
@@ -981,12 +1006,6 @@ body, button, input, select, textarea {
   text-transform: uppercase; }
 
 /* ---------- Contact Form ----------*/
-.wpcf7 {
-  color: #666;
-  background-color: #f4f4f4;
-  border: 1px solid #e1e1e1;
-  border-radius: 0; }
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
