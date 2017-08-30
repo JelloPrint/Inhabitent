@@ -560,16 +560,14 @@ form p label {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+a:hover, a:focus, a:active {
+  color: midnightblue; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
 
 /* Menus */
 .main-navigation {
@@ -819,6 +817,11 @@ body:not(.home):not(.page-template-about) .site-content {
   width: 73%; }
 
 .archive-content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 73%; }
+
+.home-content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 5%;
   width: 73%; }
@@ -1135,6 +1138,36 @@ body, button, input, select, textarea {
   margin: 1.5rem 0; }
 
 /* ---------- Journal ----------*/
+.blog .entry-meta {
+  background-color: #248A83;
+  bottom: 0;
+  color: #fff;
+  display: inline-block;
+  line-height: 1.75rem;
+  font-family: "Novecento Sans Web", sans-serf;
+  font-size: 1rem;
+  padding: 1.00005rem 1.5rem;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase; }
+
+.blog .entry-header {
+  line-height: 0;
+  position: relative; }
+  .blog .entry-header h2 {
+    background-color: #248A83;
+    font-size: 2.1rem;
+    left: 0;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 2.25rem;
+    max-width: 75%;
+    top: 0; }
+    .blog .entry-header h2 a {
+      color: #fff;
+      text-decoration: none; }
+
+/* Find Us --------------------*/
 .page .entry-title {
   color: #2f1339;
   margin-top: 0;
@@ -1180,7 +1213,36 @@ body, button, input, select, textarea {
   padding-bottom: 10px; }
 
 /* ---------- Find Us ------------------*/
-/* ---------- Website header ----------*/
+/* ---------- Single Poastr ----------*/
+.single-post .entry-meta {
+  background-color: #248A83;
+  bottom: 0;
+  color: #fff;
+  display: inline-block;
+  line-height: 1.75rem;
+  font-family: "Novecento Sans Web", sans-serf;
+  font-size: 1rem;
+  padding: 1.00005rem 1.5rem;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase; }
+
+.single-post .entry-header {
+  line-height: 0;
+  position: relative; }
+  .single-post .entry-header h2 {
+    background-color: #248A83;
+    font-size: 2.1rem;
+    left: 0;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 2.25rem;
+    max-width: 75%;
+    top: 0; }
+    .single-post .entry-header h2 a {
+      color: #fff;
+      text-decoration: none; }
+
 /* ---------- archive pages ----------*/
 .archive-page-header {
   border-bottom: 1px solid #e1e1e1;
