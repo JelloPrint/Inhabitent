@@ -27,10 +27,8 @@ a {
 /* Menus */
 
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	
+	display: flex;
 	font-family: Novecento Sans Web,sans-serif;
 	text-transform: uppercase;
 
@@ -131,4 +129,13 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+.site-header {
+	background-color: hsla(0,0%,100%,.85);
+	border-bottom: 1px solid #e1e1e1;
+	padding: .5rem 0;
+	position: fixed;
+	transition: top .5s linear;
+	width: 100%;
+	z-index: 3;
 }

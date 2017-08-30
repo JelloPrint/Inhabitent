@@ -386,6 +386,87 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+.shop-btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: #248A83;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  margin-left: 25%;
+  max-width: 60%;
+  font-family: "Novecento Sans Web", sans-serf;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .shop-btn a {
+    color: #fff;
+    text-decoration: none; }
+  .shop-btn:hover {
+    background: #19625d; }
+
+.front-black-btn {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 0;
+  cursor: pointer;
+  margin-left: 2.5%;
+  max-width: 40%;
+  font-family: "Novecento Sans Web", sans-serf;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .front-black-btn a {
+    color: #fff;
+    text-decoration: none; }
+  .front-black-btn:hover {
+    background: #19625d; }
+
+.black-btn, .green-btn, .white-btn {
+  border-radius: 0;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .black-btn:hover, .green-btn:hover, .white-btn:hover {
+    color: #fff;
+    box-shadow: none;
+    text-shadow: none; }
+
+.black-btn {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black; }
+  .black-btn:hover {
+    color: #fff;
+    background: #248A83; }
+
+.green-btn {
+  background-color: #248A83;
+  border: 1px solid #fff;
+  color: #fff; }
+  .green-btn:hover {
+    background: #19625d; }
+
+.white-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff; }
+  .white-btn:hover {
+    background: #248A83; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -476,10 +557,8 @@ a {
 
 /* Menus */
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
   font-family: Novecento Sans Web,sans-serif;
   text-transform: uppercase; }
   .main-navigation ul {
@@ -541,6 +620,15 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.site-header {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  padding: .5rem 0;
+  position: fixed;
+  transition: top .5s linear;
+  width: 100%;
+  z-index: 3; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -761,41 +849,6 @@ body, button, input, select, textarea {
   font-size: 1rem;
   line-height: 1.75; }
 
-.black-btn, .green-btn, .white-btn {
-  border-radius: 0;
-  cursor: pointer;
-  font-family: Novecento Sans Web,sans-serif;
-  font-size: .9rem;
-  line-height: 1;
-  padding: .75rem 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase; }
-  .black-btn:hover, .green-btn:hover, .white-btn:hover {
-    color: #fff;
-    box-shadow: none;
-    text-shadow: none; }
-
-.black-btn {
-  background-color: transparent;
-  border: 1px solid black;
-  color: black; }
-  .black-btn:hover {
-    background: #248A83; }
-
-.green-btn {
-  background-color: #248A83;
-  border: 1px solid #fff;
-  color: #fff; }
-  .green-btn:hover {
-    background: #19625d; }
-
-.white-btn {
-  background-color: transparent;
-  border: 1px solid #248A83;
-  color: #248A83; }
-  .white-btn:hover {
-    background: #248A83; }
-
 .page-title {
   font-size: 2.4rem;
   line-height: 1.25; }
@@ -810,11 +863,12 @@ body, button, input, select, textarea {
   height: 100vh;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
-      justify-content: center;
-  width: 100%; }
+      justify-content: center; }
 
 .home h2 {
   color: #2f1339;
@@ -823,6 +877,65 @@ body, button, input, select, textarea {
   font-weight: 400;
   margin-bottom: 3.75rem;
   text-align: center; }
+
+.home .shop-stuff {
+  margin-bottom: 4.5rem; }
+
+.home .product-type-blocks {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center; }
+
+.home .product-type-block-wrapper {
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  -ms-flex: 0 1 23.5%;
+      flex: 0 1 23.5%;
+  max-width: 23.5%;
+  padding: .75rem; }
+
+.home .product-type-block-wrapper img {
+  height: 70px;
+  width: 70px; }
+
+.home .recent-journals {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.home .recent-journal-block-item {
+  border: 1px solid #e1e1e1;
+  -ms-flex: 0 1 32%;
+      flex: 0 1 32%;
+  position: relative; }
+
+.home .latest-entries .thumbnail-wrapper {
+  background-color: #e1e1e1;
+  height: 250px;
+  overflow: hidden;
+  position: relative; }
+
+.home .latest-entries .wp-post-image {
+  max-height: 250px;
+  border-bottom: 3px solid #d1d1d1; }
+
+.home .entry-meta {
+  font-size: .75rem;
+  padding-top: 20px;
+  margin-left: 10px; }
+
+.home .journal-entry-title {
+  color: #248A83;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  line-height: 1.25rem;
+  font-family: "Novecento Sans Web", sans-serf;
+  text-decoration: none; }
 
 /* ---------- Shop Page --------------------- */
 .post-type-archive-product .page-header {
@@ -966,9 +1079,6 @@ body, button, input, select, textarea {
   font-size: 2.1rem;
   margin-bottom: 1.5rem; }
 
-.page-template-about .container {
-  text-align: center; }
-
 .page-template-about .entry-title {
   color: #fff;
   clear: both;
@@ -988,6 +1098,7 @@ body, button, input, select, textarea {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
+  text-align: center;
   width: 100%; }
 
 .page-template-about .entry-content {
@@ -997,15 +1108,14 @@ body, button, input, select, textarea {
 
 /* ---------- Find Us ------------------*/
 /* ---------- Website header ----------*/
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%;
-  font-family: Novecento Sans Web,sans-serif;
-  text-transform: uppercase; }
+/* ---------- archive pages ----------*/
+.archive .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
 
-/* ---------- Contact Form ----------*/
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
