@@ -159,3 +159,17 @@ color:                  $color__white-text;
 	background:           $color__green-brand;
 }
 }
+.moretag {
+	background-color: 		transparent;
+	border: 1px solid 		$color__black-text;
+	color: 								$color__black-text;
+	font-size: .9rem;
+	line-height: 1;
+	padding: .75rem 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover {
+		background: $color__green-brand;
+		color:			$color__white-text;
+	}
+}

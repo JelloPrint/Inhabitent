@@ -82,42 +82,29 @@ get_header(); ?>
 
 
     <!--Adventures POSTS--> 
-    <section class="adventures-container">
-            <h2>Latest Adventures</h2>
-                <div class="all-boxes">
-                    <div class="left-side-boxes">
-                        <ul class="adventure-boxes">
-                            <li class="adventure-box1">
-                                <h3 class="adventure-text"> Getting Back to Nature in a Canoe
-                                </h3>
-                                <a class="white-btn">Read More</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="right-side-boxes">
-                        <ul class="adventure-boxes">
-                            <li class="adventure-box2">
-                                <h3 class="adventure-text"> A Night with Friends at the Beach
-                                </h3>
-                                <a class="white-btn">Read More</a>
-                            </li>
-                            <li class="adventure-box3">
-                                <h3 class="adventure-text"> Taking in the View at Big Mountain
-                                </h3>
-                                <a class="white-btn">Read More</a>
-                            </li>
-                            <li class="adventure-box4">
-                                <h3 class="adventure-text"> Star-Gazing at the Night Sky
-                                </h3>
-                                <a class="white-btn">Read More</a>
-                            </li>
-                        </ul>
-                    </div>
+    <section class="adventures container">
+	    <h2>Latest Adventures</h2>
+            <div class="all-adventures">	
+                <div class="canoe">
+                    <h3>Getting Back to Nature in a Canoe<a href="<?php the_permalink(); ?>"></a></h3>
+                    <a class="adv-btn" href="<?php the_permalink(); ?>">Read More</a>
                 </div>
-                <p>
-                    <a class="btn">More Adventures</a>
-                </p>
-    </section> 
+                <div class="adventure-box-2">
+                    <div class="friends">
+                        <h3>A Night with Friends at the Beach<a href="<?php the_permalink(); ?>"></a></h3>
+                        <a class="adv-btn" href="<?php the_permalink(); ?>">Read More</a>
+                    </div>
+                <div class="mountain">
+                    <h3>Taking in the View at Big Mountain<a href="<?php the_permalink(); ?>"></a></h3>
+                    <a class="adv-btn" href="<?php the_permalink(); ?>">Read More</a>
+                </div>
+                <div class="night-sky">
+				    <h3>Star-Gazing at the Night Sky<a href="<?php the_permalink(); ?>"></a></h3>
+				    <a class="adv-btn" href="<?php the_permalink(); ?>">Read More</a>
+                </div>
+		    </div>
+        </div>
+	</section>
 
   </main> <!--#main -->
 </div> <!--#primary -->

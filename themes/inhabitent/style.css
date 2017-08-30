@@ -468,6 +468,19 @@ table {
   .white-btn:hover {
     background: #248A83; }
 
+.moretag {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .moretag:hover {
+    background: #248A83;
+    color: #fff; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -549,6 +562,8 @@ form p label {
 /* Links */
 a {
   color: royalblue; }
+  a:visited {
+    color: purple; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -561,7 +576,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   font-family: Novecento Sans Web,sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  width: 100%; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -589,8 +605,11 @@ a {
     float: left;
     position: relative; }
   .main-navigation a {
+    color: #248A83;
     display: block;
     text-decoration: none; }
+  .main-navigation .fa {
+    color: #248A83; }
 
 /* Small menu. */
 .menu-toggle,
@@ -630,6 +649,14 @@ a {
   transition: top .5s linear;
   width: 100%;
   z-index: 3; }
+
+.site-header .container {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -930,6 +957,8 @@ body, button, input, select, textarea {
       flex: 0 1 23.5%;
   max-width: 23.5%;
   padding: .75rem; }
+  .home .product-type-block-wrapper:hover {
+    border: 1px solid #d99054; }
 
 .home .product-type-block-wrapper img {
   height: 70px;

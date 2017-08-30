@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single posts.
  *
- * @package Inhabitent_Starter_Theme
+ * @package inhabitent_Starter_Theme
  */
 
 ?>
