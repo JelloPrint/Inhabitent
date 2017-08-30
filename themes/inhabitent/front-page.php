@@ -8,7 +8,7 @@
  */
 get_header(); ?>
 
-        <div id="primary" class="content-area">
+<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
     <section class="home-hero">
@@ -42,13 +42,13 @@ get_header(); ?>
           </div> <!--#Container -->
 
         <div class="entry-wrapper">
-          <div class="entry-meta">
-            <?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php inhabitent_posted_by(); ?>
-          </div> <!--#entry-meta -->
-          <h3><a class="Journal-entry-title" href="<? echo get_post_permalink() ?>"><?php the_title(); ?></a><h3>
-        </div> <!-- entry-wrapper -->
-        <a class="black-btn" href="<?echo get_post_permalink()?>">Read Entry</a>
-      </div> <!--#latest-journal-entry -->
+            <div class="entry-meta">
+                <?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php inhabitent_posted_by(); ?>
+            </div> <!--#entry-meta -->
+            <h3><a class="Journal-entry-title" href="<? echo get_post_permalink() ?>"><?php the_title(); ?></a><h3>
+            </div> <!-- entry-wrapper -->
+            <a class="black-btn" href="<?echo get_post_permalink()?>">Read Entry</a>
+        </div> <!--#latest-journal-entry -->
 
         <?php endforeach; wp_reset_postdata(); ?>
     </section> <!--#latest-journal-entries container"-->
