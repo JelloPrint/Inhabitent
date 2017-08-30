@@ -54,32 +54,18 @@ body:not(.home):not(.page-template-about) .site-content {
   margin-right:          auto;
   width:                 1120px;
 }
-.page-content-area {
-  border-right: 				1px solid #e1e1e1;
-  padding-right: 				5%;
-  width: 								73%;
-}
-.archive-content-area {
-  border-right: 				1px solid #e1e1e1;
-  padding-right: 				5%;
-  width: 								73%;
-}
-.home-content-area{
-  border-right: 				1px solid #e1e1e1;
-  padding-right: 				5%;
-  width:                73%;
-}
-
- // Page Not Found
-.content-area-pnf {
-  border-right: 1px solid #e1e1e1;
-  padding-right: 5%;
-  width: 73%;
+body:not(.home):not(.page-template-about):not(.single-adventure) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure) .widget-area {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-.search-content-area {
-	border-right: 1px solid #e1e1e1;
-	padding-right: 5%;
-	width: 73%;
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 73%;
+}
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
 }

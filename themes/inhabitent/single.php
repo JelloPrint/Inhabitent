@@ -15,9 +15,9 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
 			<div class="social-media-buttons">
-        <button type="button" class="sm-button"><i class="fa fa-facebook"></i> Like</button>
-        <button type="button" class="sm-button"><i class="fa fa-twitter"></i> Tweet</button>
-        <button type="button" class="sm-button"><i class="fa fa-pinterest"></i> Pin</button>
+        <button type="button" class="black-btn"><i class="fa fa-facebook"></i> Like</button>
+        <button type="button" class="black-btn"><i class="fa fa-twitter"></i> Tweet</button>
+        <button type="button" class="black-btn"><i class="fa fa-pinterest"></i> Pin</button>
       </div> <!-- #social-media-buttons -->
 
 
@@ -32,6 +32,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

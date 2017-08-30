@@ -345,8 +345,12 @@ body, button, input, select, textarea {
       max-width:          75%;
       top:                0;
       a{
+        font-family: Novecento Sans Web,sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
         color:            $color__white-text;
         text-decoration:  none;
+        text-transform:   uppercase;
 
       }
     }
@@ -360,6 +364,44 @@ body, button, input, select, textarea {
   padding-bottom:         1rem;
 }
 
+.archive-page .entry-meta {
+  background-color:       $color__green-brand;
+  bottom:                 0;
+  color:                  $color__white-text;
+  display:                inline-block;
+  line-height:            1.75rem;
+  font-family:            $font__menu;
+  font-size:              1rem;
+  padding:                1.00005rem 1.5rem;
+  position:               absolute;
+  right:                  0;
+  text-transform:         uppercase;
+}
+.archive-page {
+  .entry-header {
+    line-height: 0;
+    position: relative;
+    h2 {
+      background-color:    $color__green-brand;
+      font-size:          2.1rem;
+      left:               0;
+      padding:            .75rem 1.5rem;
+      position:           absolute;
+      margin-top:         2.25rem;
+      max-width:          75%;
+      top:                0;
+      a{
+        font-family: Novecento Sans Web,sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color:            $color__white-text;
+        text-decoration:  none;
+        text-transform:   uppercase;
+
+      }
+    }
+  }
+}
 /* ---------- 404 not found ----------*/
 
 /* ---------- Search.PHP ----------*/
