@@ -1,8 +1,8 @@
 (function($) {
   
     $(document).ready(function() {
-        
-      $('.icon-search').click(function(){
+
+      $('.search-toggle').click(function(){
           $('.main-navigation .search-field').toggle('fast');
           $('.main-navigation .search-field').focus();
           return false;

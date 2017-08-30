@@ -15,9 +15,7 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+
 
 $color__white-text:#fff;
 $color__black-text: black;
@@ -31,6 +29,9 @@ $color__medium-grey-brand:#808080;
 $color__grey-border:#e1e1e1;
 $color__grey-textarea:#f4f4f4;
 
+$color__link: $color__green-brand;
+$color__link-visited: darken($color__green-brand, 10%);
+$color__link-hover: darken($color__green-brand, 10%);
 // Typography
 
 $font__main: 'Merriweather Web', serif;

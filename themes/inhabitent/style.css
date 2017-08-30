@@ -481,6 +481,11 @@ table {
     background: #248A83;
     color: #fff; }
 
+a {
+  color: #248A83; }
+  a:hover, a:visited {
+    color: #19625d; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -561,7 +566,7 @@ form p label {
 --------------------------------------------------------------*/
 /* Links */
 a:hover, a:focus, a:active {
-  color: midnightblue; }
+  color: #19625d; }
 
 a:focus {
   outline: thin dotted; }

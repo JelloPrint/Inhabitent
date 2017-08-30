@@ -173,3 +173,11 @@ color:                  $color__white-text;
 		color:			$color__white-text;
 	}
 }
+
+a {
+	color: $color__link;
+	&:hover,
+	&:visited {
+		color: $color__link-hover;
+	}
+}
