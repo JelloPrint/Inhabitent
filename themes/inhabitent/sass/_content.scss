@@ -47,3 +47,34 @@
 .bypostauthor {
 	display: block;
 }
+
+body:not(.home):not(.page-template-about) .site-content {
+  display:               flex;
+  margin-left:           auto;
+  margin-right:          auto;
+  width:                 1120px;
+}
+.page-content-area {
+  border-right: 				1px solid #e1e1e1;
+  padding-right: 				5%;
+  width: 								73%;
+}
+.archive-content-area {
+  border-right: 				1px solid #e1e1e1;
+  padding-right: 				5%;
+  width: 								73%;
+}
+
+ // Page Not Found
+.content-area-pnf {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 73%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.search-content-area {
+	border-right: 1px solid #e1e1e1;
+	padding-right: 5%;
+	width: 73%;
+}

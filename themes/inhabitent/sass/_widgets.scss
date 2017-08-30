@@ -9,6 +9,13 @@
 	select {
 		max-width: 100%;
 	}
+	ul {
+		list-style-type: none; 
+	}
+	a {
+		color: #248a83;
+    text-decoration: none;
+	}
 }
 
 /* Search widget. */

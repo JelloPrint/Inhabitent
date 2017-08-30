@@ -7,12 +7,12 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<section id="primary" class="search-content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="search-page-header">
 				<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
 
@@ -23,7 +23,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php red_starter_numbered_pagination(); ?>
+			<?php inhabitent_numbered_pagination(); ?>
 
 		<?php else : ?>
 

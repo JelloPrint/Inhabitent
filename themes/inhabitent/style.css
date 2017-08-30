@@ -198,9 +198,10 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  border: 0;
+  padding: 0;
+  padding-bottom: .75rem;
+  margin: 0; }
 
 legend {
   border: 0;
@@ -695,6 +696,11 @@ a {
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+  .widget ul {
+    list-style-type: none; }
+  .widget a {
+    color: #248a83;
+    text-decoration: none; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -772,6 +778,35 @@ a {
 
 .bypostauthor {
   display: block; }
+
+body:not(.home):not(.page-template-about) .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.page-content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 73%; }
+
+.archive-content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 73%; }
+
+.content-area-pnf {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 73%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.search-content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 73%; }
 
 /*--------------------------------------------------------------
 # Media
@@ -983,6 +1018,15 @@ body, button, input, select, textarea {
   height: 250px;
   overflow: hidden;
   position: relative; }
+  .thumbnail-wrapper img {
+    max-height: 250px;
+    max-width: none;
+    width: auto;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-bottom: 5px solid #d1d1d1; }
 
 .product-info {
   text-align: center;
@@ -1109,12 +1153,17 @@ body, button, input, select, textarea {
 /* ---------- Find Us ------------------*/
 /* ---------- Website header ----------*/
 /* ---------- archive pages ----------*/
-.archive .site-content {
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px; }
+.archive-page-header {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem; }
+
+/* ---------- 404 not found ----------*/
+/* ---------- Search.PHP ----------*/
+.search-page-header {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem; }
 
 /*--------------------------------------------------------------
 # Footer

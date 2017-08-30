@@ -140,6 +140,16 @@ body, button, input, select, textarea {
   height:                 250px;
   overflow:               hidden;
   position:               relative;
+    img {
+      max-height: 250px;
+      max-width: none;
+      width: auto;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      border-bottom: 5px solid #d1d1d1;
+      }
 }
 .product-info {
   text-align:             center;
@@ -221,6 +231,8 @@ body, button, input, select, textarea {
   margin:                 1.5rem 0;
 }
 /* ---------- Journal ----------*/
+
+
 .page .entry-title {
   color:                  $color__purple-brand;
   margin-top:             0;
@@ -272,10 +284,18 @@ body, button, input, select, textarea {
 
 /* ---------- archive pages ----------*/
 
-.archive .site-content {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
+.archive-page-header{
+  border-bottom:          1px solid #e1e1e1;
+  margin-bottom:          3rem;
+  padding-bottom:         1rem;
+}
+
+/* ---------- 404 not found ----------*/
+
+/* ---------- Search.PHP ----------*/
+.search-page-header{
+  border-bottom:          1px solid #e1e1e1;
+  margin-bottom:          3rem;
+  padding-bottom:           1rem;
 }
 
