@@ -785,6 +785,9 @@ body, button, input, select, textarea {
   font-size: 2.4rem;
   line-height: 1.25; }
 
+.hentry {
+  margin: 0 0 4.5rem; }
+
 /* ---------- Front Page ----------*/
 .home .home-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -871,7 +874,7 @@ body, button, input, select, textarea {
   padding-right: .25rem;
   text-transform: none; }
 
-/* ---------- Categories Pages ex. Do, Eat, Sleep, Wear  --------- */
+/* ---------- Do, Eat, Sleep, Wear  --------- */
 .tax-product-type .content-area {
   padding-top: 3rem;
   padding-bottom: 3rem; }
@@ -885,6 +888,51 @@ body, button, input, select, textarea {
   margin: 2rem auto 3rem;
   max-width: 800px; }
 
+/* ---------- Single Product  --------- */
+.single-product .site-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.single-product .content-area {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.single-product .hentry {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.single-product .hentry .product-image-wrapper .product-content-wrapper {
+  width: 48%; }
+
+.single-product .hentry .product-content-wrapper {
+  width: 48%; }
+
+.single-product .hentry .entry-title {
+  color: #d99054;
+  clear: both;
+  line-height: 1.25rem;
+  margin-bottom: .5rem;
+  font-size: 2.4rem;
+  font-family: "Novecento Sans Web", sans-serf;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.single-product .entry-content {
+  text-align: left; }
+
+.single-product .hentry .price {
+  font-family: "Novecento Sans Web", sans-serf;
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem; }
+
+.single-product .social-media-buttons {
+  margin: 1.5rem 0; }
+
 /* ---------- Latest Journal Posts ----------*/
 /* ---------- About Page ----------*/
 .page-template-about h2 {
@@ -893,10 +941,18 @@ body, button, input, select, textarea {
   font-size: 2.1rem;
   margin-bottom: 1.5rem; }
 
+.page-template-about .container {
+  text-align: center; }
+
 .page-template-about .entry-title {
   color: #fff;
+  clear: both;
+  background: transparent;
   font-size: 3rem;
-  text-align: center; }
+  font-family: "Novecento Sans Web", sans-serf;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold; }
 
 .custom-hero {
   background-size: cover,cover;
