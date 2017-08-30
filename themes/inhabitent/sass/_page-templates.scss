@@ -60,9 +60,12 @@ body, button, input, select, textarea {
     background:           $color__green-brand;
   }
 }
-
 .entry-content {
   text-align:             center;
+}
+.page-title {
+  font-size:              2.4rem;
+  line-height:            1.25;
 }
 
 /* ---------- Front Page ----------*/
@@ -89,8 +92,63 @@ body, button, input, select, textarea {
 
 /* ---------- Shop Page --------------------- */
 
-.archive-product .text-uppercase {
-    color:                $color__green-brand;
+.post-type-archive-product .page-header {
+  text-align:             center;
+  border-bottom:          1px dashed #c8c8c8;
+  margin-bottom:          3rem;
+}
+.product-type-list {
+  display:                flex;
+  font-family:            $font__menu;
+  font-size:              1.2rem;
+  justify-content:        center;
+  list-style-type:        none;
+  margin-left:            0;
+  padding-left:           0;
+  text-transform:         uppercase;
+}
+.product-type-list li {
+  margin:                 0 1.5rem;
+}
+.product-type-list a {
+  color:                  $color__green-brand;
+  text-decoration:        none;
+}
+.product-grid {
+  display:                flex;
+  flex-wrap:              wrap;
+  justify-content:        space-between;
+  margin-bottom:          1.5rem;
+}
+.product-grid-item {
+  border:                 1px solid #e1e1e1;
+  flex:                   0 1 23%;
+  max-width:              23%;
+  margin-bottom:          1.5rem;
+}
+.thumbnail-wrapper {
+  background-color:       #e1e1e1;
+  height:                 250px;
+  overflow:               hidden;
+  position:               relative;
+}
+.product-info {
+  text-align:             center;
+  font-size:              .9rem;
+  padding:                .75rem 1rem;
+}
+.entry-title {
+  background:             $color__white-text;
+  color:                  $color__purple-brand;
+  display:                inline;
+  font-size:              16px;
+  font-size:              1rem;
+  font-weight:            400;
+  font-family:            $font__main;
+  letter-spacing:         0;
+  line-height:            1.75;
+  padding-right:          .25rem;
+  text-transform:         none;
 }
 
 /* ---------- Categories Pages ex. Do, Eat, Sleep, Wear  --------- */
@@ -104,52 +162,9 @@ body, button, input, select, textarea {
   border-bottom:          1px dashed #c8c8c8;
   margin-bottom:          3rem;
 }
-.tax-product-type .page-title {
-  font-size:              2.4rem;
-  line-height:            1.25;
-}
 .tax-product-type .taxonomy-description {
   margin:                 2rem auto 3rem;
   max-width:              800px;
-}
-.tax-product-type .product-grid {
-  display:                flex;
-  flex-wrap:              wrap;
-  justify-content:        space-between;
-  margin-bottom:          1.5rem;
-}
-.tax-product-type .product-grid-item {
-  border:                 1px solid #e1e1e1;
-  flex:                   0 1 23%;
-  max-width:              23%;
-  margin-bottom:          1.5rem;
-}
-.tax-product-type .thumbnail-wrapper {
-  background-color:       #e1e1e1;
-  height:                 250px;
-  overflow:               hidden;
-  position:               relative;
-}
-.tax-product-type .product-info {
-  text-align:             center;
-  font-size:              .9rem;
-  padding:                .75rem 1rem;
-}
-.tax-product-type .entry-title {
-  background:           #fff;
-  display:                inline;
-  font-size:              16px;
-  font-size:              1rem;
-  font-weight:            400;
-  font-family:            Merriweather Web,serif;
-  letter-spacing:         0;
-  line-height:            1.75;
-  padding-right:          .25rem;
-  text-transform:         none;
-}
-.tax-product-type h2 {
-  color:                  $color__purple-brand;
-  margin-bottom:          1.5rem;
 }
 
 /* ---------- Latest Journal Posts ----------*/

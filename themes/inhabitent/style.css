@@ -781,6 +781,10 @@ body, button, input, select, textarea {
 .entry-content {
   text-align: center; }
 
+.page-title {
+  font-size: 2.4rem;
+  line-height: 1.25; }
+
 /* ---------- Front Page ----------*/
 .home .home-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -803,8 +807,69 @@ body, button, input, select, textarea {
   text-align: center; }
 
 /* ---------- Shop Page --------------------- */
-.archive-product .text-uppercase {
-  color: #248A83; }
+.post-type-archive-product .page-header {
+  text-align: center;
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem; }
+
+.product-type-list {
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Novecento Sans Web", sans-serf;
+  font-size: 1.2rem;
+  -ms-flex-pack: center;
+      justify-content: center;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-transform: uppercase; }
+
+.product-type-list li {
+  margin: 0 1.5rem; }
+
+.product-type-list a {
+  color: #248A83;
+  text-decoration: none; }
+
+.product-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 1.5rem; }
+
+.product-grid-item {
+  border: 1px solid #e1e1e1;
+  -ms-flex: 0 1 23%;
+      flex: 0 1 23%;
+  max-width: 23%;
+  margin-bottom: 1.5rem; }
+
+.thumbnail-wrapper {
+  background-color: #e1e1e1;
+  height: 250px;
+  overflow: hidden;
+  position: relative; }
+
+.product-info {
+  text-align: center;
+  font-size: .9rem;
+  padding: .75rem 1rem; }
+
+.entry-title {
+  background: #fff;
+  color: #2f1339;
+  display: inline;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Merriweather Web", serif;
+  letter-spacing: 0;
+  line-height: 1.75;
+  padding-right: .25rem;
+  text-transform: none; }
 
 /* ---------- Categories Pages ex. Do, Eat, Sleep, Wear  --------- */
 .tax-product-type .content-area {
@@ -816,56 +881,9 @@ body, button, input, select, textarea {
   border-bottom: 1px dashed #c8c8c8;
   margin-bottom: 3rem; }
 
-.tax-product-type .page-title {
-  font-size: 2.4rem;
-  line-height: 1.25; }
-
 .tax-product-type .taxonomy-description {
   margin: 2rem auto 3rem;
   max-width: 800px; }
-
-.tax-product-type .product-grid {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  margin-bottom: 1.5rem; }
-
-.tax-product-type .product-grid-item {
-  border: 1px solid #e1e1e1;
-  -ms-flex: 0 1 23%;
-      flex: 0 1 23%;
-  max-width: 23%;
-  margin-bottom: 1.5rem; }
-
-.tax-product-type .thumbnail-wrapper {
-  background-color: #e1e1e1;
-  height: 250px;
-  overflow: hidden;
-  position: relative; }
-
-.tax-product-type .product-info {
-  text-align: center;
-  font-size: .9rem;
-  padding: .75rem 1rem; }
-
-.tax-product-type .entry-title {
-  background: #fff;
-  display: inline;
-  font-size: 16px;
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: Merriweather Web,serif;
-  letter-spacing: 0;
-  line-height: 1.75;
-  padding-right: .25rem;
-  text-transform: none; }
-
-.tax-product-type h2 {
-  color: #2f1339;
-  margin-bottom: 1.5rem; }
 
 /* ---------- Latest Journal Posts ----------*/
 /* ---------- About Page ----------*/

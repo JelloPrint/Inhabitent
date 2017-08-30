@@ -24,41 +24,46 @@ get_header(); ?>
 			?>
 
 			<?php if ( have_posts() ) : ?>
-			
+
+			<div class="container">
 				<header class="page-header">
+					
 					<?php
-						the_archive_title( '<h1 class="page-title>', '</h1>' );
+						the_archive_title( '<h1 class="page-title">', '</h1>' );
 						the_archive_description( '<div class="taxonomy-description">', '</div>' );
 					?>
 
-					<div class="flex-container-no-wrap">
+					<ul class="product-type-list">	
 						<?php foreach ( $product_types as $product_type ) : setup_postdata( $product_type ); ?>
-							<div class="product-type-name">
-								<a class="text-uppercase" href="<?php echo home_url() ?>/product-type/<?php echo $product_type->slug ?>"><?php echo $product_type->name ?></a>
-							</div> <!--#product-type-name"-->
-
+							<li class="product-type-list">
+								<a href="<?php echo home_url() ?>/product-type/<?php echo $product_type->slug ?>"><?php echo $product_type->name ?></a>
+							</li><!-- .product-type-list -->
 						<?php endforeach; wp_reset_postdata(); ?>
-					</div> <!-- #flex-container-no-wrap -->
+					</ul><!-- .product-type-list -->
 				</header> <!-- page-header -->
 
-				<section class="flex-container">
-					<?php while ( have_posts() ) : the_post(); ?>
-						<div class="flex-product-item">
-							<?php if ( has_post_thumbnail() ) : ?>
-								<a href=<?php echo get_post_permalink() ?>><div class="product-thumbnail"><?php the_post_thumbnail( 'large' ); ?></div></a>
-							<?php endif; ?>
-								<div class="product-title">
+				<div class="product-grid">
+						<?php while ( have_posts() ) : the_post(); ?>
+							<div class="product-grid-item">
+								<div class="thumbnail-wrapper">
+									<?php if ( has_post_thumbnail() ) : ?>
+									<a href=<?php echo get_post_permalink() ?>><div class="product-thumbnail"><?php the_post_thumbnail( 'large' ); ?></div></a>
+								</div><!-- .thumbnail-wrapper --> 
+								<?php endif; ?>
+								<div class="product-info">
 									<h2 class="entry-title">
-										<span><?php the_title(); ?></span> 
-										<span>.....................................</span>
-										<span><?php echo CFS()->get( 'price' ); ?></span>
-									</h2> <!--#entry-title -->
-								</div> <!--#product-title -->
-						</div> <!--#flex-product-item -->
+										<?php the_title(); ?>
+									</h2><!-- .entry-title --> 
+									<span class="price">
+										<?php echo CFS()->get( 'price' ); ?>
+									</span><!-- .price -->
+								</div> <!-- product-info -->
+							</div> <!-- .product-grid-item -->
 					<?php endwhile; ?>
-				</section> <!--#flex-container -->
-			<?php endif; ?>
+				<?php endif; ?>
 
+			</div><!-- .container -->
+			
 		</main> <!-- #main -->
 	</div> <!-- #primary -->
 	
