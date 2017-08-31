@@ -6,6 +6,8 @@ This repository is a mulitpage webiste powered by WordPress. Inhabitent is a fak
 Install the dev dependencies
 Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
 
+## About
+
 This Project had several learning objectives.
 
 1. Basic setup of a WrdPress site
