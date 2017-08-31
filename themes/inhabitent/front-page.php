@@ -85,20 +85,20 @@ get_header(); ?>
     <section class="adventures container">
 	    <h2>Latest Adventures</h2>
             <div class="all-adventures">	
-                <div class="canoe">
+                <div class="left-box">
                     <h3>Getting Back to Nature in a Canoe<a href="<?php the_permalink(); ?>"></a></h3>
                     <a class="adv-btn" href="<?php the_permalink(); ?>">Read More</a>
                 </div>
-                <div class="adventure-box-2">
-                    <div class="friends">
+                <div class="right-boxes">
+                    <div class="top-right-box">
                         <h3>A Night with Friends at the Beach<a href="<?php the_permalink(); ?>"></a></h3>
                         <a class="adv-btn" href="<?php the_permalink(); ?>">Read More</a>
                     </div>
-                <div class="mountain">
+                <div class="small-bottom-box-left">
                     <h3>Taking in the View at Big Mountain<a href="<?php the_permalink(); ?>"></a></h3>
                     <a class="adv-btn" href="<?php the_permalink(); ?>">Read More</a>
                 </div>
-                <div class="night-sky">
+                <div class="small-bottom-box-right">
 				    <h3>Star-Gazing at the Night Sky<a href="<?php the_permalink(); ?>"></a></h3>
 				    <a class="adv-btn" href="<?php the_permalink(); ?>">Read More</a>
                 </div>

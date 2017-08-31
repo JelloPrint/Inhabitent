@@ -158,6 +158,14 @@ a {
 .header-search {
 	display: flex;
 }
+.search-field {
+	border: 0;
+	background-color: transparent;
+	outline: none;
+	text-transform: uppercase;
+	line-height: 1;
+	padding-left: 10px;
+}
 .menu-main-menu-container {
     margin-right: 1.5rem;
 }

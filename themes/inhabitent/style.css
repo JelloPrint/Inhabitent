@@ -468,6 +468,19 @@ table {
   .white-btn:hover {
     background: #248A83; }
 
+.adv-btn {
+  border-radius: 0;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff; }
+
 .moretag {
   background-color: transparent;
   border: 1px solid black;
@@ -668,6 +681,14 @@ a:hover, a:active {
 .header-search {
   display: -ms-flexbox;
   display: flex; }
+
+.search-field {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  text-transform: uppercase;
+  line-height: 1;
+  padding-left: 10px; }
 
 .menu-main-menu-container {
   margin-right: 1.5rem; }
@@ -1012,6 +1033,83 @@ body, button, input, select, textarea {
   line-height: 1.25rem;
   font-family: "Novecento Sans Web", sans-serf;
   text-decoration: none; }
+
+.adventures {
+  padding-bottom: 4.5rem; }
+
+.all-adventures {
+  display: -ms-flexbox;
+  display: flex;
+  height: 540px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  position: relative; }
+  .all-adventures h3 {
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 3rem; }
+  .all-adventures a {
+    color: #fff; }
+  .all-adventures .button-hover {
+    background-color: #248A83; }
+
+.left-box {
+  border-right: 10px solid #fff;
+  height: auto;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/canoe-girl.jpg") no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  width: 50%; }
+  .left-box h3 {
+    font-size: 3rem;
+    margin: 1.5rem; }
+
+.right-boxes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 50%; }
+  .right-boxes .top-right-box {
+    border-left: 10px solid #fff;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/beach-bonfire.jpg") no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    width: 100%; }
+    .right-boxes .top-right-box h3 {
+      font-size: 2.4rem; }
+  .right-boxes .small-bottom-box-left {
+    border-right: 10px solid #fff;
+    border-left: 10px solid #fff;
+    border-top: 10px solid #fff;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/mountain-hikers.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    width: 50%; }
+    .right-boxes .small-bottom-box-left h3 {
+      font-size: 1.6rem;
+      line-height: 2rem; }
+  .right-boxes .small-bottom-box-right {
+    border-top: 10px solid #fff;
+    border-left: 10px solid #fff;
+    background: url("../../images/night-sky.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    width: 50%; }
+    .right-boxes .small-bottom-box-right h3 {
+      font-size: 1.6rem;
+      line-height: 2rem; }
 
 /* ---------- Shop Page --------------------- */
 .post-type-archive-product .page-header {
