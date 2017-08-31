@@ -30,6 +30,7 @@ a {
 	display: flex;
 	font-family: Novecento Sans Web,sans-serif;
 	text-transform: uppercase;
+	position: relative;
 	width: 100%;
 
 	ul {
@@ -147,4 +148,20 @@ a {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
+}
+.main-navigation-container {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	right: 0;
+}
+.header-search {
+	display: flex;
+}
+.menu-main-menu-container {
+    margin-right: 1.5rem;
+}
+.site-branding {
+	height: 30px;
+	width: 50px;
 }

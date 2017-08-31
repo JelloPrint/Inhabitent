@@ -3,18 +3,18 @@
 --------------------------------------------------------------*/
 
 html {
-	box-sizing: border-box;
+	box-sizing: 					border-box;
 	@include font-size(1);
 }
 
 *,
 *:before,
 *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	box-sizing: inherit;
+	box-sizing:						 inherit;
 }
 
 body {
-	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	background: 					$color__background-body; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote, q {
@@ -27,84 +27,84 @@ blockquote, q {
 }
 
 hr {
-	background-color: $color__background-hr;
-	border: 0;
-	height: 1px;
-	margin-bottom: $base__space-unit;
+	background-color: 		$color__background-hr;
+	border: 							0;
+	height: 							1px;
+	margin-bottom: 				$base__space-unit;
 }
 
 ul, ol {
-	margin: 0 0 $base__space-unit ($base__space-unit * 2);
+	margin: 							0 0 $base__space-unit ($base__space-unit * 2);
 }
 
 ul {
-	list-style: disc;
+	list-style: 					disc;
 }
 
 ol {
-	list-style: decimal;
+	list-style: 					decimal;
 }
 
 li > ul,
 li > ol {
-	margin-bottom: 0;
-	margin-left: $base__space-unit;
+	margin-bottom: 				0;
+	margin-left: 					$base__space-unit;
 }
 
 dt {
-	font-weight: bold;
+	font-weight: 					bold;
 }
 
 dd {
-	margin: 0 $base__space-unit $base__space-unit;
+	margin: 							0 $base__space-unit $base__space-unit;
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	height: 							auto; /* Make sure images are scaled correctly. */
+	max-width: 						100%; /* Adhere to container width. */
 }
 
 table {
-	margin: 0 0 $base__space-unit;
-	width: 100%;
+	margin: 							0 0 $base__space-unit;
+	width: 								100%;
 }
 .shop-btn {
-	align-self: center;
-	background: $color__green-brand;
-	border: none;
-	border-radius: 0;
-	cursor: pointer;
-	margin-left: 25%;
-	max-width: 	60%;
-	font-family: $font__menu;
-	font-size: .9rem;
-	line-height: 1;
-	padding: .75rem 1.5rem;
-	text-decoration: none;
-	text-transform: uppercase;
+	align-self: 					center;
+	background: 					$color__green-brand;
+	border: 							none;
+	border-radius: 				0;
+	cursor: 							pointer;
+	margin-left: 					25%;
+	max-width: 						60%;
+	font-family: 					$font__menu;
+	font-size: 						.9rem;
+	line-height: 					1;
+	padding: 							.75rem 1.5rem;
+	text-decoration: 			none;
+	text-transform: 			uppercase;
 	a{
-		color:							$color__white-text;
+		color: 							$color__white-text;
 		text-decoration: 		none;
 	}
 		&:hover {
-		background: darken(   $color__green-brand, 10%);
+		background: darken( $color__green-brand, 10%);
 		}
 }
 .front-black-btn {
-	text-align: center;
-	align-self: center;
-	background: $color__white-text;
-	border: 1px solid       $color__black-text;
-	border-radius: 0;
-	cursor: pointer;
-	margin-left: 2.5%;
-	max-width: 	40%;
-	font-family: $font__menu;
-	font-size: .9rem;
-	line-height: 1;
-	padding: .75rem 1.5rem;
-	text-decoration: none;
-	text-transform: uppercase;
+	text-align: 					center;
+	align-self: 					center;
+	background: 					$color__white-text;
+	border: 							1px solid $color__black-text;
+	border-radius: 				0;
+	cursor: 							pointer;
+	margin-left: 					2.5%;
+	max-width: 						40%;
+	font-family: 					$font__menu;
+	font-size: 						.9rem;
+	line-height: 					1;
+	padding: 							.75rem 1.5rem;
+	text-decoration: 			none;
+	text-transform: 			uppercase;
 	a{
 		color:							$color__white-text;
 		text-decoration: 		none;
@@ -161,23 +161,16 @@ color:                  $color__white-text;
 }
 .moretag {
 	background-color: 		transparent;
-	border: 1px solid 		$color__black-text;
+	border: 							1px solid $color__black-text;
 	color: 								$color__black-text;
-	font-size: .9rem;
-	line-height: 1;
-	padding: .75rem 1.5rem;
-	text-decoration: none;
-	text-transform: uppercase;
+	font-size: 						.9rem;
+	line-height: 					1;
+	padding: 							.75rem 1.5rem;
+	text-decoration: 			none;
+	text-transform: 			uppercase;
 	&:hover {
-		background: $color__green-brand;
-		color:			$color__white-text;
+		background: 				$color__green-brand;
+		color:							$color__white-text;
 	}
 }
 
-a {
-	color: $color__link;
-	&:hover,
-	&:visited {
-		color: $color__link-hover;
-	}
-}

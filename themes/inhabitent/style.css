@@ -481,11 +481,6 @@ table {
     background: #248A83;
     color: #fff; }
 
-a {
-  color: #248A83; }
-  a:hover, a:visited {
-    color: #19625d; }
-
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -580,6 +575,7 @@ a:hover, a:active {
   display: flex;
   font-family: Novecento Sans Web,sans-serif;
   text-transform: uppercase;
+  position: relative;
   width: 100%; }
   .main-navigation ul {
     display: none;
@@ -660,6 +656,25 @@ a:hover, a:active {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+
+.main-navigation-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  position: absolute;
+  right: 0; }
+
+.header-search {
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu-main-menu-container {
+  margin-right: 1.5rem; }
+
+.site-branding {
+  height: 30px;
+  width: 50px; }
 
 /*--------------------------------------------------------------
 # Accessibility

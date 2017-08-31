@@ -20,3 +20,4 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
 
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `inhabitent.dev` to the appropriate localhost URL).
 
+/ About this project ---/
