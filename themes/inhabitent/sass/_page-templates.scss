@@ -173,17 +173,17 @@ body, button, input, select, textarea {
 			}
 		}
 		.small-bottom-box-right {
-      border-top: 10px solid $color__white-text;;
-      border-left: 10px solid $color__white-text;;
+      border-top:          10px solid $color__white-text;;
+      border-left:         10px solid $color__white-text;;
 			background: url('../../images/night-sky.jpg') no-repeat;
-			background-size: cover;
-			position: relative;
-			box-sizing: border-box;
-			padding: 1.5rem;
-      width: 50%;
+			background-size:     cover;
+			position:            relative;
+			box-sizing:          border-box;
+			padding:             1.5rem;
+      width:               50%;
 			h3 {
-				font-size: 1.6rem;
-				line-height: 2rem;
+				font-size:         1.6rem;
+				line-height:       2rem;
       }
 		}
 	}
